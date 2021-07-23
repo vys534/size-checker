@@ -1,0 +1,7 @@
+redis:
+  uri:
+  password:
+  db:
+
+# Directory to search. Will not search subdirectories.
+directory:
