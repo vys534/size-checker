@@ -39,7 +39,7 @@ func SetStats(path string, redisClient *redis.Client) (*Stats, error) {
 	defer cancel()
 
 	stats.TimeToComplete = finish - start
-	stats.LastUpdated = time.Now().Unix()
+	stats.LastUpdated = time.Now().UTC().Unix()
 
 	e := redisClient.Set(ctx, "sc_time_to_complete", stats.TimeToComplete, 0).Err()
 	if e != nil {

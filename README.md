@@ -7,7 +7,7 @@ Information that is pushed to the database includes:
 - Total size (in bytes) of all files (`sc_total_size`)
 - Number of files (`sc_file_count`)
 - Time to complete operation (`sc_time_to_complete`)
-- Last updated (`sc_last_updated` as unix time)
+- Last updated (`sc_last_updated` as unix time in UTC)
 
 Note: the values don't expire.
 
